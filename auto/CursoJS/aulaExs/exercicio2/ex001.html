@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex 001</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header> 
+    <section>
+        <div class="form">
+            <span>Ano de nascimento:
+                <input type="number" name="anoNasc" id="anoNasc">
+            </span>
+            <br>
+            <span>Sexo: 
+                <input type="radio" name="sexo" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem" >
+                <label for="fem">Feminino</label>
+            </span>
+            <br>
+            <span>
+                <input type="button" value="Verificar" id="btn" onclick="verificar()">
+            </span>
+        </div>
+        <div id="exibeMsg">
+            Preencha os campos para obter a resposta
+        </div>
+    </section>
+    <footer>
+        <span> &copy; Exercício 001 - Curso em Video</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

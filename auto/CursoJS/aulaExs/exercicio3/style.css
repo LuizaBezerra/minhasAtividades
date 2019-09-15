@@ -1,0 +1,46 @@
+body{
+    font:normal 15pt Arial;
+    align-content: center;
+    background-color: rgb(19, 18, 18);
+}
+header{
+    color:white;
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius: 15pt;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
+}
+footer{
+    margin: 30px;
+    color:white;
+    text-align: center;
+    font-style:italic;
+}
+div{
+    align-content: center;
+    text-align: center;
+    padding: 8px;
+}
+input{
+    margin:8px;
+    text-align: justify;
+}
+span{
+    font: 20pt  brown "Century gothic";
+    text-align: left;
+}
+#btn{
+    border: 0px;
+    border-radius: 35pt;
+    background-color: brown;
+    color:whitesmoke;
+    text-align: center;
+    font-size: 15pt;
+    padding: 5px 25px;
+    width: 150px;
+}

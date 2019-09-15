@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(206, 246, 246);
+            font:normal 18pt Arial;
+            color:rgb(38, 79, 109);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">apendendo DOM</h1>
+    <p id="paragrafo1">Aprendendo <strong>DOM</strong> no curso em video</p>
+    <p id="paragrafo2">aprendendo DOM no curso em video, uhul!</p>
+    <div id="divisao">Clique em mim</div>
+
+
+    <script>
+        //window.document.write("olá mundo!");
+        var p1 = document.getElementsByTagName('p')[0];
+        p1.style.color = 'red';
+
+        var t1 = document.getElementById("divisao");
+        t1.style.background='purple'
+        t1.style.color ='white';
+
+        //document.write("ESTÁ ESCRITO -> " + p1.innerText);
+    </script>
+</body>
+</html>

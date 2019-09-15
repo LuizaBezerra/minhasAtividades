@@ -1,0 +1,174 @@
+/*GERAL*/
+*{margin: 0;padding: 0; font-family: var(--font-link);}
+:root{
+    /*tamanhos*/
+    --width-web:1200px;
+    --width-mobile:300px;
+    /*cores*/
+    --color-white:#ffffff;
+    --color-roxo:#21112E;
+    --color-laranja:#DD691B;
+    --color-cinza:#F5F5F5;
+    /*tipografia*/
+    --font-link:Arial, Helvetica, sans-serif;   
+}
+.container{
+    width: var(--width-web);
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*HEADER*/
+header{
+    background-color: var(--color-cinza);
+    position: fixed;
+    top:0;
+    width:100%;
+}
+.menu-top{
+    background-color: var(--color-roxo);
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-t{
+    width: 500px;
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.menu-t a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-link);
+    color:var(--color-roxo);
+    padding: 2px 10px;
+    background-color:var(--color-white); 
+    border-radius:8px;
+}   
+.menu-bottom{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+.menu-b{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 900px;
+    margin: auto;
+}
+.menu-b a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-link);
+    color:var(--color-roxo);
+    padding:  10px;
+}
+.menu-bottom a img{
+    width: 200px;
+}
+/*FOOTER*/
+footer{
+    background-color: var(--color-roxo);
+    color:var(--color-white);
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contato{
+    display: flex;
+    justify-content: space-between;
+    width: var(--width-web);
+    margin:auto;
+}
+.social-f,.social-i,.mail-g{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.social-f img,.social-i img,.mail-g img{
+    margin-right: 10px;
+}
+/* MAIN HOME*/
+.banner{
+  width: 100%;
+  height: 600px;
+  margin-top:120px;
+  position: relative inherit;
+  display: inline-flex;
+  justify-content: center;
+}
+.logo-banner{
+    display: flex;
+    justify-content: center;
+    width: var(--width-web);
+    margin: auto;
+    align-items: center;
+    position: absolute inherit;
+}
+.logo-banner img{
+    width: 50%;
+}
+
+.paralax-efect{
+    background-image:linear-gradient(to right,rgba(255, 255, 255, 0.255),rgba(255, 255, 255, 0.255)), url(../img/bs.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:var(--color-white);
+}
+.text, .text p{
+    text-align: center;
+    line-height: 1.5;
+    padding: 30px 0px;
+    width: 600px;
+    margin: auto;
+    
+    color:var(--color-roxo);
+}
+.text h2{
+    
+    color:var(--color-roxo);
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+    margin: auto;
+    border-bottom: var(--color-laranja) solid 2px;
+}
+#historia,#propositos,#colaboradores,#receitas{
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.saiba{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saiba img{
+    width: 250px;
+    margin:20px;
+    border-radius: 9px;
+}
+.btn-saiba{
+    border:none;
+    border-radius: 10px;
+    width: 100px;
+    background-color: var(--color-laranja);
+    padding: 15px 5px;
+    text-decoration: none;
+    color:var(--color-white);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(206, 246, 246);
+            font:normal 18pt Arial;
+            color:rgb(38, 79, 109);
+        }
+        h1{
+            font:normal 30pt Arial;
+            color: rgb(22, 66, 95);
+            text-shadow: 1px 2px 3px rgb(8, 71, 90);           
+        }
+        div#area{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(146, 228, 200);
+            font:normal 18pt Arial;
+            line-height: 200px;
+            text-align: center;
+            margin: 5%;
+            color:rgb(73, 50, 50);
+            border: 2px solid rgb(3, 73, 50);
+            border-radius: 20%;
+        }
+        #form-input{
+            background-color: rgba(152, 236, 194, 0.466);
+            border: 1px solid rgb(14, 148, 70);
+            border-radius:15px;
+            padding: 3%;
+            width:380px;
+
+        }
+        #txt1, #txt2{
+            width: 100px;
+            font: normal 18pt Arial;
+            padding-left: 5px; 
+            margin-top:5px;
+            border:0px;
+            border-radius: 5px;
+        }
+        #btnSomar{
+            background-color: rgba(4, 88, 43, 0.657);
+            border:0px;
+            padding: 6px 30px;
+            font: normal 15pt Arial;
+            border-radius: 15px;
+            color:white;
+        }
+        #res{
+            margin-top: 15px;
+            font: normal 15pt Arial;
+        }
+        hr{
+            border: 3px solid rgb(128, 109, 2);
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Eventos DOM - parte II</h1>   
+    <div id="form-input">
+       <input type="number" id="txt1" name="txt1"> 
+       <span>+</span>
+       <input type="number" id="txt2" name="txt2">
+       <input type="button" value="Somar" id="btnSomar" onclick="Somar()">
+       <div id="res">Resultado</div>
+    </div>
+    <hr>
+    <script>
+       function Somar(){
+        var tn1 = window.document.getElementById('txt1'); 
+        var tn2 = window.document.querySelector('input#txt2');
+        var res = window.document.querySelector('div#res');
+        var n1 =  Number(tn1.value);
+        var n2 = Number(tn2.value);
+        var sm = n1 + n2;
+
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong> ${sm} </strong>.`;
+    };
+    </script>
+</body>
+</html>

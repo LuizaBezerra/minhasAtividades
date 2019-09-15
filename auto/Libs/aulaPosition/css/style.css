@@ -1,0 +1,41 @@
+*{margin:0;padding:0}
+.container{width:1170PX;margin:auto;display:flex;justify-content:space-between;flex-wrap:wrap}
+.btn{color:#fff;background-color:#ff0909;text-decoration:none;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;border-radius:2pt;padding:10px 15px}
+.btn:hover{background-color:transparent;border:#ff0909 1px solid;color:#ff0909}
+header{background-color:#ff0909;display:flex}
+nav{width:1366px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px 0}
+.menu{width:320px;display:flex;list-style:none;justify-content:space-between}
+.menu a{color:#fff;text-decoration:none;font-family:Arial,Helvetica,sans-serif}
+.ativo,.menu a:hover{color:#ddd;border-bottom:#ddd 2px solid;padding:2px 0}
+.banner{width:1366px;height:450px;margin:auto;background-color:#f5f5f5;position:relative}
+.banner .texto-banner{position:absolute;left:50px;bottom:50px;color:#fff;width:600px}
+.texto-banner p{margin-bottom:20px}
+.t1{font-family:'Times New Roman',Times,serif;font-size:40pt}
+.t2{font-family:Arial,Helvetica,sans-serif;font-size:30px}
+.texto-banner .farial{font-family:Arial,Helvetica,sans-serif}
+.card{margin-top:95px;width:350px;line-height:1.5}
+.card p{margin-top:24px;margin-bottom:18px}
+footer{background-color:#ff0909;height:90px;margin-top:70px;display:flex;justify-content:center;position:relative;bottom:0}
+footer p{color:#fff;font-family:Arial,Helvetica,sans-serif;margin:auto}
+@media(max-width:1169px){
+nav{width:768px}
+.banner{width:768px;height:30%}
+.banner img{width:768px;height:100%}
+.banner .texto-banner{width:30%}
+.texto-banner .t1{font-size:30px}
+.texto-banner .t2{font-size:15px}
+}
+@media(max-width:767px){
+body{margin:auto}
+footer,header{width:368px;font:14px Arial}
+nav{width:368px;flex-direction:column}
+.menu{flex-direction:column;align-items:center;justify-content:space-between;height:80px}
+.banner{width:368px;height:250px;margin:0;padding:20px 0;background-image:linear-gradient(120deg,#a1c4fd 0,#c2e9fb 100%)}
+.banner img{display:none}
+.banner .texto-banner{color:#000;position:static;text-align:center;width:auto;padding:10px}
+.container{width:300px;padding:0;flex-flow:column wrap;width:360px;margin:0}
+.card{width:250px}
+.card img{width:200}
+.texto-banner .t1{font-size:20px;width:100%}
+.texto-banner .t2{font-size:10px;width:100%}
+}

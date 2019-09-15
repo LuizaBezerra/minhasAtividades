@@ -1,0 +1,53 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    background-color: aliceblue;
+    color: black;
+}
+
+.botao{
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    border-radius:4pt;
+    background-color: teal;
+    color:white;
+    padding: 10px 20px; 
+    margin: 10px;
+}
+
+.menu{
+    top:0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    background-color: teal;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-right: 20%;
+    border-radius: 10pt;
+}
+
+.menu a{    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    text-decoration: none;
+    color:#fff;   
+}
+
+.menu a:hover{
+    color: rgb(108, 219, 224);
+}
+
+table,td,th,tr{
+    border:1px teal solid;
+    padding: 10pt;
+    border-radius: 1pt;
+    background-color: #f5f5f5;
+    border-collapse: collapse;
+}
+
+table{
+    width: 50%;
+}

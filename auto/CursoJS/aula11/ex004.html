@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            width: 220px;
+            font: normal 20pt Arial;
+            border:0px; 
+            border-radius: 10px;
+            background-color: rgba(240, 190, 241, 0.253);
+        }
+        #btn{
+            border: 0px;
+            font: normal 20pt Arial;
+            width: 450px;
+            padding: 2%;
+            background-color: rgba(60, 5, 112, 0.644);
+            color:white;
+            border-radius: 150px;
+            margin-top: 60px;
+        }
+        #resultado{
+            margin-top: 50px;
+            padding: 5%;
+            border: 1px solid rgb(65, 3, 65);
+            width: 400px;
+            border-radius: 20px;
+            background-color: rgba(73, 4, 73, 0.61);
+            color:rgb(247, 175, 243);
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Descobrindo sua nacionalidade</h3>
+    <span>Onde você nasceu? 
+        <input type="text" name="txtNas" id="txtNas">
+    </span>
+    <input type="button" id="btn" value="Verificar">
+    <div class="res" id="resultado"> AQUI O RESULTADOs       
+    </div>
+
+
+    <script>
+        var a = document.getElementById('btn');
+        a.addEventListener('click',clicar);
+        function nasci(){  
+            var pais = document.getElementById('txtNas');
+            var res = document.getElementById('resultado');
+
+            var y = pais.value;
+
+            if(y =='BR'){
+                res.innerText = 'Voce é brasileiro';
+            }
+            else{               
+                res.innerText = 'Voce é estrangeiro';
+            }
+        }
+    </script>
+</body>
+</html>

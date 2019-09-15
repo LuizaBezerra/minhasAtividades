@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Tableless.com.br</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        html, body {height:100%;}
+        .geral {
+            min-height:100%;
+            position:relative;
+            width:800px;
+            margin: auto;
+        }
+        .footer {
+            bottom:0;            
+            width:100%;
+            height: 10%;
+            padding: 10px;
+            background-color: darkgrey;
+        }
+        .header{
+            width:100%;
+            padding: 20px;
+            background-color: darkgrey;
+        }
+        .content {overflow:hidden; padding: 40px 30px; width: 90%;}
+        .content p{line-height: 1.5; text-anchor: middle; text-align: justify;margin-top: 20px;}
+        .aside {width:200px; background-color: darkslateblue; display: flex; flex-direction: column; height: 90%;padding: 30px 20px;}
+        .fleft {float:left; }
+        .fright {float:right;}    
+        ul{list-style: none;}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        HEADER
+    </div>
+    <div class="aside fleft">
+        ESQUERDA
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </div>
+    <div class="aside fright">
+        DIREITA
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </div>
+    <div class="geral">
+        <div class="content">
+            <h1>Teste position</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Proin augue erat, ullamcorper pulvinar malesuada ultricies,
+            mollis non magna. Curabitur quis nisi ut ligula ultricies gravida. 
+            Suspendisse elit justo, vulputate in facilisis sed, tristique id nisi. 
+            Maecenas risus quam, suscipit eu vehicula ut, ultricies in neque. 
+            Donec gravida tristique turpis ut interdum. Donec lacinia nisi id
+            enim lacinia sit amet facilisis est ullamcorper. Curabitur ipsum libero, 
+            sollicitudin nec rhoncus quis, congue non ipsum. Etiam at eros dolor. 
+            Mauris non erat vitae leo faucibus fermentum. In consectetur, diam eget 
+            faucibus dignissim, urna justo pretium dui, nec eleifend neque velit
+            vitae odio. Nam et tristique turpis. In dictum commodo sem ut dignissim.
+            In convallis quam non tortor posuere sed ornare nulla pulvinar. 
+            Suspendisse placerat turpis in tortor rutrum nec mollis nulla posuere. In
+            teger tellus est, rhoncus ut sagittis eget, mattis a velit. Vestibulum a
+            nte ipsum primis in faucibus orci luctus et ultrices posuere cubilia Cur
+            ae; Quisque gravida posuere orci nec ornare. Donec elit nulla, aliquam e
+            get cursus a, commodo sed odio.
+            </p>      
+        </div>    
+    </div>
+    <div class="footer">
+        FOOTER
+    </div>
+
+</body>
+</html>

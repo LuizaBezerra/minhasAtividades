@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio Acelera-Dev</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="data_48px.png" type="image/x-icon" />
+</head>
+<body class="bg-light">   
+            <section id="menuSite">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-purple fixed-top justify-content-between">
+                        <span class="navbar-brand">${Desafio Acelera-Dev}</span>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse right" id="navbarNav">
+                            <ul class="navbar-nav right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cifraCesar">Cifra de César</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobreMim">Sobre mim</a>
+                            </li>
+                            </ul>
+                        </div>
+                     </nav>
+            </section>
+        <div class="container mt-5" id="site">
+            <section id="cifraCesar" class="my-5 text-purple">
+                    <span class="display-2 col-12 border border-left-0 border-right-0 border-top-0 pb-2"> Criptográfia de César</span>
+                    <p class="media mx-4 mt-3">
+                        <span class="text-info mr-2">O que é? </span>
+                        Consiste em substituir cada letra do alfabeto
+                        por outra algumas posições à frente.
+                    </p>
+
+                    <div class="row bg-info rounded mx-2 text-white p-4 my-5">
+                        <div class="col-12 border border-white border-left-0 border-right-0 border-top-0 mb-3">
+                            <h2 class="lead text-white float-left">Exemplo de deslocamento de 4 posições.</h2>                        
+                        </div>                
+                            <div class="display-4 text-light col-12 text-center mr-0 container border border-white rounded">                               
+                                <div class="row text-center">
+                                    <div class="col-1 px-5 mx-4">A</div>
+                                    <div class="col-1 px-5 mx-4 border-left">B</div>
+                                    <div class="col-1 px-5 mx-4 border-left">A</div>
+                                    <div class="col-1 px-5 mx-4 border-left">C</div>
+                                    <div class="col-1 px-5 mx-4 border-left">A</div>
+                                    <div class="col-1 px-5 mx-4 border-left">T</div>
+                                    <div class="col-1 px-5 mx-4 border-left">E</div>
+                                </div>
+                                <div class="row text-center">
+                                        <div class="col-1 px-5 py-3 mx-4">E</div>
+                                        <div class="col-1 px-5 py-3 mx-4 border-left">F</div>
+                                        <div class="col-1 px-5 py-3 mx-4 border-left">E</div>
+                                        <div class="col-1 px-5 py-3 mx-4 border-left">G</div>
+                                        <div class="col-1 px-5 py-3 mx-4 border-left">E</div>
+                                        <div class="col-1 px-5 py-3 mx-4 border-left">X</div>
+                                        <div class="col-1 px-5 py-3 mx-4 border-left">I</div>
+                                </div>
+                            </div>                            
+                    </div>
+                    <div class="row border border-info rounded mx-2">
+                        <div class="col">
+                            <h2 class="lead text-info float-left">Cifra com deslocamento de 4 posições.</h2>
+                        </div>
+                        <div class="col-12 form-group d-inline">
+                            <div class="form-row">
+                                <div class="col-5">
+                                    <textarea class="form-control large border border-info text-info p-2 lead col-12" rows="8" id="msgDescryptografada"  placeholder="Coloque aqui a mensagem que deseja criptografar com a cifra de César..."></textarea>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="col-12 mt-4 mx-0 text-center border border-0 px-4 btn btn-info btn-lg rounded" id="btncifrar" onclick="cifrar()">Cifrar</button>
+                                    <button type="button" class="col-12 mt-4 mx-0 text-center border border-0 mt-5 btn btn-info btn-lg rounded" id="btndecifrar" onclick="">Decifrar</button>        
+                                </div>
+                                <div class="col-5">
+                                    <textarea class="form-control large border border-info text-info p-2 lead" rows="8" id="msgCryptografada" placeholder="Coloque aqui a mensagem que deseja descriptografar com a cifra de César..."></textarea>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+            </section>
+            <section class="my-5">
+                <div class="container bg-info p-5 rounded  text-white my-5">
+                    <div class="row">
+                            <div class="col-3">
+                                <span class="display-4 mb-4">.Conheça um pouco<br> sobre a Cifra de César</span>
+                            </div>
+                            <div class="col border border-left border-top-0 border-bottom-0 border-right-0 border-white pl-4">
+                                <p class=" text-white lead mt-5">
+                                        Júlio César, imperador romano de 100
+                                        a.C. a 44 a.C., utilizava um código para
+                                        proteger as mensagens enviadas a
+                                        seus generais. Assim, se a mensagem
+                                        caísse em mãos inimigas, a
+                                        informação não poderia ser
+                                        compreendida. Cada letra do alfabeto
+                                        era substituída pela letra três
+                                        posições à frente, ou seja, o “A” era
+                                        substituído pelo “D”, o “B” pelo “E”, o
+                                        “C” pelo “F”, e assim sucessivamente.
+                                        Qualquer código que tenha esse
+                                        padrão é considerado uma Cifra de
+                                        César, também conhecida como
+                                        Código de César.
+                                </p>
+                                <p class="text-white lead">
+                                    Para o desafio <span class="border border-left-0 border-right-0 border-top-0 border-warning text-warning">ACELERA DEV</span> , cada letra do alfabeto
+                                    será substituída pela letra quatro posições a frente. 
+                                </p>
+                            </div>
+                    </div>                        
+                </div>
+            </section>
+
+            <section id="sobreMim" class="mt-5">
+                <div class="row my-5">
+                    <div class="col-12 text-purple text-center mb-5"><br>
+                        <span class="display-3 text-center">#Conheça-um-pouco-sobre-mim</span>
+                    </div>
+                    <div class="col-12">
+                    <div class="card card-sm bglilac text-white shadow shadow-lg ">
+                            <div class="card-header d-inline align-middle">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="eu.jpg" class="rounded-circle img-sobre-mim shadow shadow-sm">
+                                    </div>
+                                    <div class="col mt-2 mx-4">
+                                        <h4 class="card-title display-4">.Luiza Bezerra</h4>    
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-body lead"> 
+                                <p class="text-center "> Desde pequena sonhava em deixar sua marca, escolheu a técnologia
+                                    como aliada. E assim dia após dia busca novos conhecimentos.
+                                    Aprendeu algumas linguagens de programação no curso técnico em informática, como:
+                                    <span class="text-purple">C#</span>, <span class="text-purple">JAVA</span>,
+                                    <span class="text-purple">JAVASCRIPT</span>. Aprendeu também técnologias front-end, como:
+                                    <span class="text-purple"> HTML</span> e <span class="text-purple">CSS</span>.
+                                    E como a vontade de aprender não está somente em sala de aula, buscou aprender sozinha
+                                    <span class="text-purple">BOOTSTRAP</span> e <span class="text-purple">MATERIALIZE</span> .
+                                </p> 
+                                <div class="border border-bottom-0 border-left-0 border-right-0">
+                                    <span class="lead text-white text-left my-3">.O que mais ela quer?</span>
+                                    <p class="small text-center ">Aperfeiçoar tudo o que já aprendeu e aprender ainda mais. Quer aprender Python,
+                                        React, React-Native, Android, Kotlin, PHP e muito mais.
+                                    </p>
+                                </div>
+                                <div class="border border-bottom-0 border-left-0 border-right-0 mt-4">
+                                        <span class="lead text-white text-left">.Porque ela quer?</span>
+                                        <p class="small text-center ">
+                                            Ela acredita que a técnologia pode mudar o mundo, ajudar as pessoas e proporcionar uma vida melhor para todos os seres vivos.
+                                        </p>
+                                    </div>                              
+                            </div>
+                            <div class="card-footer text-muted">
+                                <span class="text-white small">Por enquanto apenas uma aspirante a desenvolvedora. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div> 
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

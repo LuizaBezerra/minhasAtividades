@@ -1,0 +1,67 @@
+Exercícios estrutura sequêncial
+{
+    1) Faça um algoritmo para solicitar ao usuário um número, calcular e mostrar o seu triplo.
+    {
+        Console.WriteLine("Digite um número");
+        int num = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("O triplo deste número é: "+ num*3);
+    }
+    
+    2) Elabore um algoritmo que leia o preço de custo de uma mercadoria e um percentual de acréscimo para exibição do valor de venda desta mercadoria.
+    {
+        Console.WriteLine("Digite o preço");
+        int preco = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Valor com 10% acrescido " + (preco + (preco*10)/100));
+
+    }
+
+    3) Um vendedor ganha 5% de comissão sobre suas vendas. Considere um algoritmo que leia seu salário fixo, o total de vendas efetuadas e retorne o total que vendedor irá receber.
+    {
+        Console.WriteLine("Digite o salário");
+        int salario = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite o valor total da venda");
+        int totVenda = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Valor do salário com comissão de 5% é " + (salario + (totVenda * 5) / 100));
+
+    }
+
+    4) Elabore um algoritmo que efetue a apresentação da conversão de um valor em real (R$) para o valor em dólar (US$). O algoritmo deverá solicitar o valor da cotação do dólar.
+    {
+        Console.WriteLine("Digite o valor em Reais");
+        decimal real = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Digite a cotação do dolar");
+        decimal dolar = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Valor convertido é " + (real/dolar));
+    }
+
+    5) Escreva um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). O vendedor ganha 10% de comissão sobre suas vendas efetuadas. Exiba, o nome, o salário fixo e salário final do mês do vendedor.
+    {
+         Console.WriteLine("Digite o nome do vendedor");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Digite o salário");
+        decimal salario = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Digite o valor total das vendas");
+        decimal totVendas = Convert.ToDecimal(Console.ReadLine());
+        decimal comis = (totVendas * 10) / 100;
+        Console.WriteLine(
+            "O vendedor "+nome+" possui salário fixo de "+salario+" e receberá 10% de comissão pelas vendas efetuadas, o valor é "+(salario + comis)
+        );
+    } 
+
+    6) Sabendo que uma pessoa recebe um salário fixo por mês e que ele tem contas a pagar, faça um algoritmo que leia o salário que ela recebe por mês e leia também a dívida que possui. Por fim calcule e escreva quanto vai sobrar do salário dela depois de pagar a dívida.
+    {
+        Console.WriteLine("Digite o valor do salário fixo");
+        decimal salario = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Digite o valor total das dívidas do mês");
+        decimal dividas = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Ao pagar as dívidas sobrará " + (salario-dividas)+" reais.");
+    }
+
+    7) O preço do vale transporte é de R$4,30. O motorista de um ônibus deseja adquirir um programa que leia a quantidade de passageiros que entram no ônibus e que depois calcule e escreva quanto de dinheiro ele terá arrecadado. Considere que todos os passageiros irão pagar o vale transporte sem descontos.
+    {
+        decimal pass = 4.30M;
+        Console.WriteLine("Quantos pasageiros entraram no ônibus?");
+        int qtd = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("O valor total arrecadado é de " + (qtd*pass));
+    }
+}

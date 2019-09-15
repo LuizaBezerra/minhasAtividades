@@ -1,0 +1,4 @@
+C:\Users\Sony Vaio\Desktop\ESTUDOS\myApp\obj\Debug\netcoreapp2.2\myApp.csprojAssemblyReference.cache
+C:\Users\Sony Vaio\Desktop\ESTUDOS\myApp\obj\Debug\netcoreapp2.2\myApp.csproj.CoreCompileInputs.cache
+C:\Users\Sony Vaio\Desktop\ESTUDOS\myApp\obj\Debug\netcoreapp2.2\myApp.AssemblyInfoInputs.cache
+C:\Users\Sony Vaio\Desktop\ESTUDOS\myApp\obj\Debug\netcoreapp2.2\myApp.AssemblyInfo.cs

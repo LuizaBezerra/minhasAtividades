@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(206, 246, 246);
+            font:normal 18pt Arial;
+            color:rgb(38, 79, 109);
+        }
+        h1{
+            font:normal 30pt Arial;
+            color: rgb(22, 66, 95);
+            text-shadow: 1px 2px 3px rgb(8, 71, 90);           
+        }
+        div#area{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(146, 228, 200);
+            font:normal 18pt Arial;
+            line-height: 200px;
+            text-align: center;
+            margin: 5%;
+            color:rgb(73, 50, 50);
+            border: 2px solid rgb(3, 73, 50);
+            border-radius: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Eventos DOM</h1>   
+    <div id="area">
+        Interaja . . .
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area');
+        // aqui os eventos .... parte html //
+        /* para chamar os eventos pelo htmls .... basta colocar o 'atributo' do evento
+        dentro da tag que vc quer que tenha o evento .... e colocar o nome entre aspas ... ex:
+        
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" 
+        onmouseout="sair()" >
+        Interaja . . .
+        </div>        
+         */
+         // aqui chamando os eventos pelo js//
+         a.addEventListener('click',clicar);
+         a.addEventListener('mouseenter',entrar);
+         a.addEventListener('mouseout',sair);
+         //------------- funções--------------//
+        function clicar(){
+            a.innerText = "Clicou!";
+            a.style.backgroundColor = "red"
+        };
+        function entrar(){
+            a.innerText = "Entrou!";
+        };
+        function sair(){
+            a.innerText = "Saiu!";
+            a.style.backgroundColor = "rgb(146, 228, 200)"
+        };
+    </script>
+</body>
+</html>

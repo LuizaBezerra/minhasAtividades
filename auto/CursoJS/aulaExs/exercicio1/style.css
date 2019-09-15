@@ -1,0 +1,40 @@
+body{
+    font:normal 15pt Arial;
+    align-content: center;
+    background-color:rgb(75, 133, 241); 
+}
+header{
+    color:white;
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius: 15pt;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
+}
+footer{
+    margin: 30px;
+    color:white;
+    text-align: center;
+    font-style:italic;
+}
+#exibeImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 150%;
+    margin: 40px 100px;
+}
+#exibeMsg{
+    text-align: center;
+    font: 20pt Arial;
+    color:rgb(40, 104, 141);
+    margin: 15px;
+}
+div{
+    align-content: center;
+    text-align: center;
+    padding: 8px;
+}

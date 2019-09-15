@@ -1,0 +1,55 @@
+body{
+    font:normal 15pt Arial;
+    align-content: center;
+    background-color:rgb(50, 20, 58); 
+}
+header{
+    color:white;
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius: 15pt;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
+}
+footer{
+    margin: 30px;
+    color:white;
+    text-align: center;
+    font-style:italic;
+}
+#exibeImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 150%;
+    margin: 40px 100px;
+}
+#exibeMsg{
+    text-align: center;
+    font: 20pt Arial;
+    color:rgb(40, 104, 141);
+    margin: 15px;
+}
+div{
+    text-align: center;
+    align-items: center;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#btn{
+    border-radius: 20px;
+    border:0px;
+    background-color: blueviolet;
+    padding: 5px;
+    text-align: center;
+    color:whitesmoke;
+    margin: 10px;
+    height: 30px;
+    width: 50%;
+    align-content: center;
+}
