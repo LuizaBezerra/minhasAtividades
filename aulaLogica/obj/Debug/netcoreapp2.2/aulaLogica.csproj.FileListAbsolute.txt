@@ -1,0 +1,11 @@
+C:\Users\fic\Desktop\aulaLogica\bin\Debug\netcoreapp2.2\aulaLogica.deps.json
+C:\Users\fic\Desktop\aulaLogica\bin\Debug\netcoreapp2.2\aulaLogica.runtimeconfig.json
+C:\Users\fic\Desktop\aulaLogica\bin\Debug\netcoreapp2.2\aulaLogica.runtimeconfig.dev.json
+C:\Users\fic\Desktop\aulaLogica\bin\Debug\netcoreapp2.2\aulaLogica.dll
+C:\Users\fic\Desktop\aulaLogica\bin\Debug\netcoreapp2.2\aulaLogica.pdb
+C:\Users\fic\Desktop\aulaLogica\obj\Debug\netcoreapp2.2\aulaLogica.csprojAssemblyReference.cache
+C:\Users\fic\Desktop\aulaLogica\obj\Debug\netcoreapp2.2\aulaLogica.csproj.CoreCompileInputs.cache
+C:\Users\fic\Desktop\aulaLogica\obj\Debug\netcoreapp2.2\aulaLogica.AssemblyInfoInputs.cache
+C:\Users\fic\Desktop\aulaLogica\obj\Debug\netcoreapp2.2\aulaLogica.AssemblyInfo.cs
+C:\Users\fic\Desktop\aulaLogica\obj\Debug\netcoreapp2.2\aulaLogica.dll
+C:\Users\fic\Desktop\aulaLogica\obj\Debug\netcoreapp2.2\aulaLogica.pdb
