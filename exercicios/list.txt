@@ -1,0 +1,87 @@
+Exercícios Estrutura Condicional
+{ 
+    Elabore um algoritmo que leia o salário digitado pelo usuário e também sua despesa total, verificando se o saldo final é positivo (superávit) ou negativo (déficit).{
+        decimal salario,despesa,saldo;
+        Console.WriteLine("Informe seu salário");
+        salario = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Informe sua despesa");
+        despesa = Convert.ToDecimal(Console.ReadLine());
+        saldo = (salario - despesa);
+        if(saldo < 0)
+            Console.WriteLine($"Saldo negativo. SALDO ATUAL:{saldo}");
+        else
+            Console.WriteLine($"Saldo Positivo. SALDO ATUAL:{saldo}");
+    }
+    
+    Criar um algoritmo que, se o preço total a ser pago for inferior a R$ 100, então subtraia R$25,00 do preço total.{
+        decimal total;
+        Console.WriteLine("Informe o preço total");
+        total = Convert.ToDecimal(Console.ReadLine());
+        if(total <=100 && total > 25)
+            total = total - 25;
+        Console.WriteLine($"Valor total a ser pago: {total}");
+}
+    
+    Faça um algoritmo que leia dois números inteiros e retorne o maior valor lido.{
+        int n1,n2;
+        Console.WriteLine("Informe um número");
+        n1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Informe outro número");
+        n2 = int.Parse(Console.ReadLine());
+        if(n1>n2)
+            Console.WriteLine($"O 1º número: {n1} é maior que o 2º número: {n2}");
+        else if(n1<n2)
+            Console.WriteLine($"O 1º número: {n1} é menor que o 2º número: {n2}");
+        else
+            Console.WriteLine($"O 1º número: {n1} é igual ao 2º número: {n2}");
+    }
+    
+    Se o preço total a ser pago ficar entre 100 e 1000, então forneça um desconto de 15%.{
+        decimal total;
+        Console.WriteLine("Informe o valor total a ser pago");
+        total = Convert.ToDecimal(Console.ReadLine());
+        if(total >= 100 && total<= 1000){
+            total = total -((total * 15)/100);
+            Console.WriteLine($"UHULL! Você ganhou 15% de desconto. O total a ser pago é {total}");
+        }
+            Console.WriteLine($"O total a ser pago é {total}");
+    }
+    
+    Faça um algoritmo que leia três números inteiros e retorne o maior valor lido.{
+        int n1,n2,n3;
+        Console.WriteLine("Informe o 1º número");
+        n1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Informe o 2º número");
+        n2 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Informe o 3º número");
+        n3 = int.Parse(Console.ReadLine());
+        if(n1>n2 && n1>n3)
+            Console.Write($"{n1} é o maior número informado.");
+        else if(n2>n1 && n2>n3)
+            Console.Write($"{n2} é o maior número informado.");
+        else
+            Console.Write($"{n3} é o maior número informado.");
+    }
+    
+    Faça um algoritmo que recebe a idade do usuário e o classifica no sistema ESRB-Games (pesquisem a respeito){       
+       int idade;
+            Console.WriteLine("Digite sua idade");
+            idade = Convert.ToInt32(Console.ReadLine());
+            if(idade >18){
+                Console.WriteLine($"Classificação: Livre e Apenas adultos");
+            }
+            else if(idade == 17 ){
+                Console.WriteLine($"Classificação: Livre e Maduro");
+            }
+            else if(idade >= 13 && idade < 17 ){
+                Console.WriteLine($"Classificação: Livre e Adolescente");
+            }
+            else if(idade >= 10 && idade < 13 ){
+                Console.WriteLine($"Classificação: Livre e Infantil");
+            }
+            else{
+                 Console.WriteLine($"Classificação: Livre.");
+            }
+
+    }
+}

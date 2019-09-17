@@ -1,0 +1,11 @@
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\bin\Debug\netcoreapp2.2\exercicios.deps.json
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\bin\Debug\netcoreapp2.2\exercicios.runtimeconfig.json
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\bin\Debug\netcoreapp2.2\exercicios.runtimeconfig.dev.json
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\bin\Debug\netcoreapp2.2\exercicios.dll
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\bin\Debug\netcoreapp2.2\exercicios.pdb
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\obj\Debug\netcoreapp2.2\exercicios.csprojAssemblyReference.cache
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\obj\Debug\netcoreapp2.2\exercicios.csproj.CoreCompileInputs.cache
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\obj\Debug\netcoreapp2.2\exercicios.AssemblyInfoInputs.cache
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\obj\Debug\netcoreapp2.2\exercicios.AssemblyInfo.cs
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\obj\Debug\netcoreapp2.2\exercicios.dll
+C:\Users\fic\Desktop\GIT\minhasAtividades\exercicios\obj\Debug\netcoreapp2.2\exercicios.pdb
