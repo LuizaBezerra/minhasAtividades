@@ -1,0 +1,11 @@
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\obj\Debug\netcoreapp2.2\exerciciosSwitch.csprojAssemblyReference.cache
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\obj\Debug\netcoreapp2.2\exerciciosSwitch.csproj.CoreCompileInputs.cache
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\obj\Debug\netcoreapp2.2\exerciciosSwitch.AssemblyInfoInputs.cache
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\obj\Debug\netcoreapp2.2\exerciciosSwitch.AssemblyInfo.cs
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\bin\Debug\netcoreapp2.2\exerciciosSwitch.deps.json
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\bin\Debug\netcoreapp2.2\exerciciosSwitch.runtimeconfig.json
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\bin\Debug\netcoreapp2.2\exerciciosSwitch.runtimeconfig.dev.json
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\bin\Debug\netcoreapp2.2\exerciciosSwitch.dll
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\bin\Debug\netcoreapp2.2\exerciciosSwitch.pdb
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\obj\Debug\netcoreapp2.2\exerciciosSwitch.dll
+C:\Users\fic\Desktop\GIT\minhasAtividades\exerciciosSwitch\obj\Debug\netcoreapp2.2\exerciciosSwitch.pdb
